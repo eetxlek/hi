@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estibaliz Etxaburu - Software Developer</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Estibaliz Etxaburu</h1>
+            <h2>Software developer 🌐</h2>
+        </header>
+        <button id="descargar-pdf">Download CV pdf</button>
+        <a href="https://www.linkedin.com/in/estibaliz-etxaburu-lekube-%F0%9F%8C%90-5011b75b/" target="_blank">Linkedin</a>
+        <section>
+            <p>I dedicated almost ten years to studying podiatry, driven by my interest for health and sports. &#127973; &#9996; &#9728; &#127939; &#10084;</p>
+            <p>During the pandemic and the challenges it brought, I decided to shift my career toward IT and software development. &#128165;  &#128027;  &#128099; </p>
+            <p>Since then, I have trained in this field and had the opportunity to intern at Accenture, where I worked on developing REST APIs on Azure within a DataHub. This experience allowed me to strengthen my technical skills and teamwork abilities.  &#128187;  &#128200;</p>
+            <p>Currently, I am looking for new opportunities to continue growing, take on new challenges, and contribute to strengthen different projects. &#128284; </p>
+            <p>I enjoy being part of teams where I can learn and promote both personal and collective development.  &#128516;</p>
+        </section>
+        <section>
+            <h2>Technologies</h2>
+            <ul>
+                <li>C#, .NET , Visual Studio Code</li>
+                <li>Java, Spring Boot, Netbeans, Maven</li>
+                <li>HTML/CSS, JavaScript</li>
+                <li>Python </li>
+                <li>Git, GitHub</li>
+                <li>MySQL, MongoDB </li>
+                <li>Azure, Azure devOps </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Professional experience</h2>
+            <ul>
+                <li><strong>Accenture internship. Client: Repsol</strong> - Backend, API REST development (Oct 2024 - Jan 2025)</li>
+            </ul>
+            <img src="accenture.png" alt="Accenture Alicante" style="width:200px;height:250px;">
+        </section>
+
+
+        <script>
+            window.addEventListener("load", function () {
+                document.body.style.opacity = "0";
+                setTimeout(() => {
+                    document.body.style.transition = "opacity 1s";
+                    document.body.style.opacity = "1";
+                }, 100);
+            });
+            document.getElementById("descargar-pdf").addEventListener("click", function () {
+                window.open("CV Estibaliz.pdf", "_blank");
+            });
+
+            let visitas = localStorage.getItem("visitas") || 0;
+            visitas++;
+            document.getElementById("contador").textContent = visitas;
+            localStorage.setItem("visitas", visitas);
+        </script>
+    </body>
+</html>
