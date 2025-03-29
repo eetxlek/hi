@@ -40,24 +40,10 @@
             </ul>
             <img src="accenture.png" alt="Accenture Alicante" style="width:200px;height:250px;">
         </section>
-
-
         <script>
-            window.addEventListener("load", function () {
-                document.body.style.opacity = "0";
-                setTimeout(() => {
-                    document.body.style.transition = "opacity 1s";
-                    document.body.style.opacity = "1";
-                }, 100);
-            });
             document.getElementById("descargar-pdf").addEventListener("click", function () {
                 window.open("CV Estibaliz.pdf", "_blank");
             });
-
-            let visitas = localStorage.getItem("visitas") || 0;
-            visitas++;
-            document.getElementById("contador").textContent = visitas;
-            localStorage.setItem("visitas", visitas);
         </script>
     </body>
 </html>
